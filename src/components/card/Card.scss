@@ -1,0 +1,47 @@
+.card-container {
+  transition: ease-in-out;
+  animation: slideMe 0.5s ease-in;
+  padding: 1em;
+  border-radius: 8px;
+  width: 300px;
+  height: 130px;
+  gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  position: relative;
+
+  & .logo {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    & .logo-1 {
+      height: 2em;
+      width: 2em;
+      border-radius: 50%;
+      background: #ec001b;
+    }
+    & .logo-2 {
+      height: 2em;
+      width: 2em;
+      border-radius: 50%;
+      background: #f79e1c;
+      margin-left: -1em;
+    }
+  }
+}
+
+@keyframes slideMe {
+  0% {
+    transform: translate(-20px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}

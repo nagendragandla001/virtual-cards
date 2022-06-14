@@ -1,0 +1,75 @@
+.cards-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+  & .create-card-container {
+    height: 6em;
+    border: 1px dotted #b3b5bd;
+    padding: 1em;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    & .add-btn {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      font-size: 24px;
+      border: none;
+      background: #333744;
+      color: #fff;
+      cursor: pointer;
+    }
+    & .btn-text {
+      color: #ccced3;
+    }
+  }
+
+  & .cards-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: auto;
+
+    & .left {
+      position: absolute;
+      left: 0;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    & .right {
+      position: absolute;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    & .card-list {
+      display: flex;
+      flex-direction: row;
+      gap: 4em;
+      flex-wrap: nowrap;
+      margin: 0 3em;
+      align-items: center;
+      // flex: auto;
+
+      & .card-wrapper {
+        height: inherit;
+        flex: 1 1 25% auto;
+        color: #fff;
+        flex-wrap: nowrap;
+        cursor: pointer;
+      }
+    }
+  }
+}
